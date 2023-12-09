@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Yeon Woo Website</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap");
+    body {
+      background-image: url("seo-2394237_1280.jpg");
+    }
+    header {
+      font-family: "Gaegu", sans-serif;
+      font-weight: 900;
+      font-size: 800%;
+      text-align: center;
+      position: relative;
+      top: 0px;
+    }
+    h1 {
+      font-family: "Gaegu", sans-serif;
+      font-weight: 900;
+      font-size: 150%;
+    }
+    p {
+      font-family: "Gaegu", sans-serif;
+      font-weight: 900;
+      font-size: 200%;
+      text-align: center;
+      position: relative;
+      top: -460px;
+    }
+
+    aside {
+      position: absolute;
+      top: 150px;
+      left: 1260px;
+    }
+    img[src="free-icon-instagram-logo-1384886.jpg"] {
+      border-radius: 15px;
+    }
+    img[src="github.jpg"] {
+      border-radius: 100px;
+    }
+  </style>
+  <body>
+    <div
+      class="w3-sidebar w3-bar-block"
+      style="display: none; z-index: 5"
+      id="mySidebar"
+    >
+      <button class="w3-bar-item w3-button w3-xxlarge" onclick="w3_close()">
+        Close &times;
+      </button>
+      <a
+        href="https://gogumahotteok.github.io/profile/"
+        class="w3-bar-item w3-button"
+        >Home</a
+      >
+      <a
+        href="https://gogumahotteok.github.io/profile1/"
+        class="w3-bar-item w3-button"
+        >About me</a
+      >
+      <a
+        href="https://gogumahotteok.github.io/profile2/"
+        class="w3-bar-item w3-button"
+        >my friends</a
+      >
+      <a
+        href="https://gogumahotteok.github.io/profile3/"
+        class="w3-bar-item w3-button"
+        >Python Storage</a
+      >
+    </div>
+
+    <div
+      class="w3-overlay"
+      onclick="w3_close()"
+      style="cursor: pointer"
+      id="myOverlay"
+    ></div>
+
+    <div>
+      <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">
+        &#9776;
+      </button>
+      <div class="w3-container">
+        <header>Python Storage</header>
+        <h1>
+          <br /><br />
+          저의 파이썬 저장소 입니다.<br />
+          1학년 2학기 컴퓨터과학과 코딩<br />
+          이라는 교양을 통해 처음 파이썬을<br />
+          접하였습니다. 그 과정에서<br />
+          만들었던(교양교수님의 도움도 컸음)<br />
+          결과물들을 소소하게 올려두는 곳<br />
+          입니다. 나중에 더 많은 결과물을<br />
+          만들거나 다른 언어를 배우게 되면<br />
+          그 언어의 카테고리를 만들어서<br />
+          결과물들을 올릴 예정입니다.<br />
+          모든 결과물이 올라가지는 않으니<br />
+          그냥 재미로 봐주세요.<br />
+          밑줄 친 언어를 클릭하면 다운받아집니다!!
+        </h1>
+        <p>
+          <img src="py7-r1 서연우 output.jpg" /><br />
+          처음 만들었던 결과물 추억이네염<br /><br />
+          <a href="py7-ch9_1_asteroid_game.py">Turtle game</a><br />
+          <img src="turtle game.jpg" /><br />
+          키보드 방향키로 조종 가능<br />
+          왼쪽 오른쪽이 방향조절이고<br />
+          앞키 꾹 누르면 전진함<br /><br />
+          <a href="py7-r10 서연우.py">Calculator</a><br />
+          <img src="py7-r10 서연우 output.jpg" /><br />
+          미완성 계산기... Pi는 구현되는데<br />
+          sin, cos을 구현하지 못했음;;<br /><br />
+        </p>
+        <aside>
+          <a
+            href="https://www.instagram.com/p/Czq5Z4RLjVM/?hl=ko"
+            target="blank"
+            ><img src="free-icon-instagram-logo-1384886.jpg" /></a
+          ><br />
+          <br />
+          <br />
+          <a href="https://github.com/gogumahotteok" target="blank"
+            ><img src="github.jpg"
+          /></a>
+        </aside>
+      </div>
+    </div>
+
+    <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
